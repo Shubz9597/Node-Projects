@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../../public/img/weather.png">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    {{> header}}
+    <div class="container">
+        <div class="title_con">
+            <span class="title">
+                Weather
+            </span>
+        </div>
+        <div class="search_div">
+            <div class="search_box">
+                <form action="" style="position: relative; top: 8px">
+                    <table class="elementsContainer">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Enter a City Name" class="search" id="searchString">
+                            </td>
+                            <td>
+                                <button type="submit">
+                                    <span class="material-icons">search</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>    
+            </div>
+            <span class="material-icons location">
+                location_searching
+            </span>
+        </div>
+        <div class="des">
+            <p id="m1"></p>
+            <p id="m2"></p>
+        </div>
+    </div>
+    {{> footer}}
+        <script src="../js/app.js"></script>
+</body>
+</html>
